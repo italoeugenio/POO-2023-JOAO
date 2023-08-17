@@ -21,18 +21,17 @@ public class verificaNumeroPrimo {
         return 1; // Se não foi encontrado divisor, n é primo.
     }
 
-    public static String mensagemPrimo(int n) {
-        if (verificarNumeroPrimo(n) == 1) {
-            return n + " é um número primo."; // Se o número for primo, retorna a mensagem afirmativa.
-        } else {
-            return n + " não é um número primo."; // Se o número não for primo, retorna a mensagem negativa.
-        }
-    }
-
-   
     public static void main(String[] args) {
-        System.out.println(mensagemPrimo(11)); 
-        System.out.println(mensagemPrimo(15)); 
-        System.out.println(mensagemPrimo(3)); 
+        int numero1 = 11;
+        int numero2 = 15;
+        int numero3 = 3;
+
+        int resultado1 = verificarNumeroPrimo(numero1);
+        int resultado2 = verificarNumeroPrimo(numero2);
+        int resultado3 = verificarNumeroPrimo(numero3);
+
+        System.out.println(numero1 + " é primo? " + resultado1);
+        System.out.println(numero2 + " é primo? " + resultado2);
+        System.out.println(numero3 + " é primo? " + resultado3);
     }
 }
