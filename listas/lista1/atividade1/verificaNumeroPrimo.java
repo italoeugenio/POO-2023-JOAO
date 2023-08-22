@@ -1,4 +1,4 @@
-package atividade1;
+package lista1.atividade1;
 
 /**
  * verificaNumeroPrimo
