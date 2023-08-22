@@ -43,6 +43,6 @@ public class Exercicio2 {
             default:
                 System.out.println("Opção inválida.");
         }
-        
+        input.close(); // Fechar o Scanner ao final do programa
     }
 }

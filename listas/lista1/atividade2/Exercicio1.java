@@ -2,8 +2,8 @@ package lista1.atividade2;
 
 import java.util.Scanner;
 
-/* * Calculadora Simples Crie um programa Java que funcione como uma calculadora * simples. Peça ao usuário para inserir dois
- números e uma operação (+, -, *, * /). 
+/* * Calculadora Simples Crie um programa Java que funcione como uma calculadora *
+ simples. Peça ao usuário para inserir dois números e uma operação (+, -, *, * /). 
  Realize a operação escolhida e exiba o resultado. */
 public class Exercicio1 {
     public static void main(String[] args) {
@@ -34,16 +34,18 @@ public class Exercicio1 {
                     resultado = num1 / num2;
                 } else {
                     System.out.println("Divisão por zero não existe.");
+                    scanner.close();
                     return;
                 }
                 break;
             default:
                 System.out.println("Opção inválida.");
+                scanner.close();
                 return;
         }
 
         System.out.println("Resultado: " + resultado);
 
-        scanner.close(); //AJUDA NO DESEMPENHO 
+        scanner.close();
     }
 }
