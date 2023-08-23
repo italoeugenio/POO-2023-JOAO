@@ -41,7 +41,7 @@ public class Exercicio2 {
                 System.out.println("Opção inválida.");
         }
 
-        input.close(); // Fechar o Scanner ao final do programa
+        input.close(); 
     }
 
     public static void clearConsole() { // System("cls") do java
