@@ -2,11 +2,6 @@ package lista1.atividade2;
 
 import java.util.Scanner;
 
-/*Conversor de Temperatura Crie um conversor de temperatura que permita ao usuário converter entre 
-Celsius e Fahrenheit. Peça ao usuário para escolher a direção da conversão e, em seguida, 
-faça a conversão e exiba o resultado.
- */
-
 public class Exercicio2 {
 
     public static void main(String[] args) {
@@ -25,16 +20,18 @@ public class Exercicio2 {
 
         Escolha = input.nextInt();
 
+        clearConsole(); // System("cls") do java
+
         switch (Escolha) {
             case 1:
-                System.out.print("Digite a temperatura em Celsius: ");
+                System.out.print("\nDigite a temperatura em Celsius: ");
                 Celsius = input.nextFloat();
                 Fahrenheit = (Celsius * 9 / 5) + 32;
                 System.out.println("Temperatura em Fahrenheit: " + Fahrenheit);
                 break;
 
             case 2:
-                System.out.print("Digite a temperatura em Fahrenheit: ");
+                System.out.print("\nDigite a temperatura em Fahrenheit: ");
                 Fahrenheit = input.nextFloat();
                 Celsius = (Fahrenheit - 32) * 5 / 9;
                 System.out.println("Temperatura em Celsius: " + Celsius);
@@ -43,6 +40,21 @@ public class Exercicio2 {
             default:
                 System.out.println("Opção inválida.");
         }
+
         input.close(); // Fechar o Scanner ao final do programa
+    }
+
+    public static void clearConsole() { // System("cls") do java
+        try {
+            final String os = System.getProperty("os.name");
+            if (os.contains("Windows")) {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } else {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
+            }
+        } catch (Exception e) {
+            
+        }
     }
 }
