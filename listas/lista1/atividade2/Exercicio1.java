@@ -2,7 +2,7 @@ package lista1.atividade2;
 
 import java.util.Scanner;
 
-/* * Calculadora Simples Crie um programa Java que funcione como uma calculadora *
+/*Calculadora Simples Crie um programa Java que funcione como uma calculadora *
  simples. Peça ao usuário para inserir dois números e uma operação (+, -, *, * /). 
  Realize a operação escolhida e exiba o resultado. */
 public class Exercicio1 {
