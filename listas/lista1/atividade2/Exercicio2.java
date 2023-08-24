@@ -2,6 +2,8 @@ package lista1.atividade2;
 
 import java.util.Scanner;
 
+/*Exercício 2: Conversor de Temperatura Crie um conversor de temperatura que permita ao usuário converter entre Celsius e Fahrenheit
+.Peça ao usuário para escolher a direção da conversão e, em seguida, faça a conversão e exiba o resultado.*/
 public class Exercicio2 {
 
     public static void main(String[] args) {
